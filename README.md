@@ -9,3 +9,9 @@ $ sudo chmod +x /etc/update-motd.d/00-custom
 ```
 
 Relogin
+
+
+## one command
+```bash
+$ curl -O https://raw.githubusercontent.com/sumshiiy/ubuntu-motd/refs/heads/main/lama.sh | bash lama.sh
+```
