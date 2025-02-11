@@ -12,6 +12,8 @@ Relogin
 
 
 ## one command
+kalok dimintain restart blabalaba
+enter aja
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/sumshiiy/ubuntu-motd/refs/heads/main/lama.sh)
 ```
