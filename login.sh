@@ -6,7 +6,7 @@ GREEN='\033[1;32m'
 YELLOW='\033[1;33m'
 CYAN='\033[1;36m'
 NC='\033[0m' # No Color
-PUBLIC_IP=$(curl -s ifconfig.co)
+PUBLIC_IP=$(curl -s https://checkip.pterodactyl-installer.se/)
 # Uptime calculation
 UPTIME_DAYS=$(expr `cat /proc/uptime | cut -d '.' -f1` % 31556926 / 86400)
 UPTIME_HOURS=$(expr `cat /proc/uptime | cut -d '.' -f1` % 31556926 % 86400 / 3600)
@@ -26,8 +26,7 @@ echo -e "${CYAN}Welcome to $(lsb_release -ds) (GNU/Linux)${NC}"
 echo ""
 echo -e "${GREEN} * Halo Mas Ipan, Tetap semangat ya!${NC}"
 echo -e "${YELLOW} -------------------------------------------${NC}"
-echo -e " * Api Backend: ${GREEN}https://api.aisbir.cloud${NC}"
-echo -e " * IP Indihome: ${RED}$(hostname -I | awk '{print $1}')${NC}"
+echo -e " * IP Local: ${RED}$(hostname -I | awk '{print $1}')${NC}"
 echo -e " * Public IP: ${GREEN}$PUBLIC_IP${NC}"
 echo ""
 echo -e "${CYAN} System information as of $(date)${NC}"
