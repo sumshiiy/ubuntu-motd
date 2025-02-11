@@ -13,5 +13,5 @@ Relogin
 
 ## one command
 ```bash
-$ curl -O https://raw.githubusercontent.com/sumshiiy/ubuntu-motd/refs/heads/main/lama.sh | bash lama.sh
+curl -o https://raw.githubusercontent.com/sumshiiy/ubuntu-motd/refs/heads/main/lama.sh | bash lama.sh
 ```
